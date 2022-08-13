@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Control acceso</title>
+    <link rel="stylesheet" href="~/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/vendor/fonts/circular-std/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/libs/css/style.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/assets/vendor/fonts/fontawesome/css/fontawesome-all.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/vendor/vector-map/jqvmap.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/vendor/jvectormap/jquery-jvectormap-2.0.2.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/vendor/charts/chartist-bundle/chartist.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/assets/vendor/charts/c3charts/c3.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/vendor/charts/morris-bundle/morris.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/assets/vendor/daterangepicker/daterangepicker.css" asp-append-version="true" />
+
+</head>
+
+@* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">control_acceso</a> *@
+
+
+<body>
+
+    <div class="dashboard-main-wrapper">
+
+        <partial name="_navigation" />
+        <partial name="_sidebar" />
+
+        @RenderBody()
+
+        <script src="~/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="~/assets/vendor/slimscroll/jquery.slimscroll.js" asp-append-version="true"></script>
+        <script src="~/assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+        <script src="~/assets/vendor/charts/chartist-bundle/Chartistjs.js"></script>
+        <script src="~/assets/vendor/charts/chartist-bundle/chartist-plugin-threshold.js"></script>
+
+        <script src="~/assets/vendor/charts/c3charts/c3.min.js"></script>
+        <script src="~/assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+        <script src="~/assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
+        <script src="~/assets/vendor/charts/charts-bundle/chartjs.js"></script>
+        <script src="~/assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+        <script src="~/assets/libs/js/dashboard-finance.js"></script>
+
+        <script src="~/assets/libs/js/main-js.js"></script>
+        <script src="~/assets/vendor/gauge/gauge.min.js"></script>
+        <script src="~/assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="~/assets/vendor/charts/morris-bundle/morris.js"></script>
+        <script src="~/assets/vendor/charts/morris-bundle/morrisjs.html"></script>
+
+        <script src="../../../../cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="../../../../cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        @* @await RenderSectionAsync("Scripts", required: false) *@
+    </div>
+</body>
+
+</html>
